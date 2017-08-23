@@ -1,4 +1,6 @@
 .App {
+  background: #e5e6f4;
+  overflow: auto;
 }
 
 .App-logo {
@@ -6,17 +8,21 @@
   height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-  text-align: center;
-}
-
 .App-intro {
   font-size: large;
   padding: 1rem 2rem;
+}
+
+.content,
+.container {
+  max-width: 80rem;
+  margin: auto;
+}
+
+.content {
+  background: #fff;
+  margin-top: -2rem;
+  margin-bottom: 6rem;
 }
 
 @keyframes App-logo-spin {

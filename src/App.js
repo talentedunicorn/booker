@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from './components/header';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Booker - A booking management tool</h2>
+      <Router>
+        <div className="App">
+          <Header title="Booker" subtitle="Event booking made simple"/>
+          <div className="content">
+            <div className="App-intro">
+              <p>With <strong>Booker</strong> you can</p>
+              <ul>
+                <li>Post events</li>
+                <li>Share on social media</li>
+                <li>Get email notifications for bookings</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="App-intro">
-          <p>With <strong>Booker</strong> you can:</p>
-          <ul>
-            <li>Post events</li>
-            <li>Share on social media</li>
-            <li>Get email notifications for bookings</li>
-          </ul>
-        </div>
-      </div>
+      </Router>
     );
   }
 }

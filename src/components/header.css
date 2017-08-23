@@ -1,0 +1,26 @@
+.header {
+  background-color: #222;
+  color: #fff;
+}
+
+.header .container {
+  padding: 12rem 2rem 3rem;
+}
+
+.header .logo-text {
+  color: #ec9b33;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header .subtext {
+  font-weight: normal;
+  margin: .5rem 0 1rem;
+}
+
+.header .logo-text,
+.header .subtext {
+  letter-spacing: 2px;
+}
