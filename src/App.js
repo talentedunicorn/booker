@@ -15,10 +15,10 @@ class App extends Component {
             <Route exact={true} path="/" render={() => (
               <div>
                 <Home/>
-                <Link to="/event">Events</Link>
+                <Link to="/events">Events</Link>
               </div>
             )}/>
-            <Route path="/event" component={Events}/>
+            <Route path="/events" component={Events}/>
           </div>
         </div>
       </Router>

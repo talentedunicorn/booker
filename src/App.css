@@ -23,9 +23,20 @@
 
 .title {
   letter-spacing: 1px;
-  border-bottom: 5px solid #ec9b33;
-  padding-bottom: .5rem;
+  padding-bottom: .75rem;
   margin: 0 0 1rem;
+  position: relative;
+  font-weight: bold;
+}
+
+.title:after {
+  content: "";
+  position: absolute;
+  background: #ec9b33;
+  bottom: 0;
+  left: 0;
+  height: .3rem;
+  width: 2rem;
 }
 
 @media screen and (min-width: 85rem) {
