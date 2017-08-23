@@ -8,19 +8,28 @@
 }
 
 .header .logo-text {
-  color: #ec9b33;
   text-decoration: none;
-  text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  color: #ec9b33;
 }
 
 .header .subtext {
   font-weight: normal;
   margin: .5rem 0 1rem;
+  font-size: 1rem;
 }
 
 .header .logo-text,
 .header .subtext {
   letter-spacing: 2px;
+}
+
+@media screen and (min-width: 85rem) {
+  .header .container {
+    padding-left: 0;
+  }
+
+  .header .subtext {
+    font-size: 1.5rem;
+  }
 }
