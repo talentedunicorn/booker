@@ -39,8 +39,8 @@
   width: 2rem;
 }
 
-.floatWrapper {
-  padding: 0;
+.floatWrapper > * {
+  padding-bottom: 2rem;
 }
 
 .floatWrapper:before,
@@ -55,12 +55,11 @@
 
 .full,
 .half {
-  padding: 2rem;
+  /* padding: 1rem; */
 }
 
 .full {
   width: 100%;
-  float: none;
 }
 
 @media screen and (min-width: 60em) {
@@ -68,9 +67,17 @@
     margin-bottom: 6rem;
   }
 
+  .full,
+  .half {
+    float: left;
+  }
+
+  .half:nth-child(odd) {
+    padding-right: 2rem;
+  }
+
   .half {
     width: 50%;
-    float: left;
   }
 }
 

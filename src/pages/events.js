@@ -7,7 +7,8 @@ export default () =>
     <div className="content floatWrapper">
       <div className="half">
         <h2 className="title">05 September 2017, 3PM - 7PM MYT</h2>
-        <p>Learn the basic techniques of watercolour applications and the easiest way to paint florals. At the end of the workshop, you will paint one floral masterpiece which you can pair it brush calligraphy which will be taught in class.</p>
+        <p>Learn the basic techniques of watercolour applications and the easiest way to paint florals.</p>
+        <p>At the end of the workshop, you will paint one floral masterpiece which you can pair it brush calligraphy which will be taught in class.</p>
 
         <h2 className="title">Package includes</h2>
         <ul>
@@ -19,6 +20,10 @@ export default () =>
       <div className="half">
         <h2 className="title">Getting there</h2>
         <p>23, Jalan SS 20/11, Damansara Kim, 47400 Petaling Jaya, Selangor, Malaysia</p>
+      </div>
+
+      <div className="full">
+        <h3 className="title">Book now</h3>
       </div>
     </div>
   </div>
