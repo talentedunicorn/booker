@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
 import bg from '../images/kligraphy.jpg';
-import { Link } from 'react-router-dom';
 
 export default () => 
   <div className="event">
@@ -26,7 +25,6 @@ export default () =>
 
       <div className="full">
         <h3 className="title">Book now</h3>
-        <Link to="/">Back</Link>
       </div>
     </div>
   </div>
