@@ -39,8 +39,32 @@
   width: 2rem;
 }
 
+.floatWrapper {
+  padding: 0;
+}
+
+.floatWrapper:before,
+.floatWrapper:after {
+  content: " ";
+  display: table;
+}
+
+.floatWrapper:after {
+  clear: both;
+}
+
+.half {
+  padding: 2rem;
+}
+
 @media screen and (min-width: 85rem) {
   .content {
     margin-bottom: 6rem;
   }
+
+  .half {
+    width: 50%;
+    float: left;
+  }
 }
+
