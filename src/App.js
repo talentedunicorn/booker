@@ -10,16 +10,16 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header title="Booker" subtitle="Event booking made simple"/>
-          <div className="content">
             <Route exact={true} path="/" render={() => (
               <div>
-                <Home/>
-                <Link to="/events">Events</Link>
+                <Header title="Booker" subtitle="Event booking made simple"/>
+                <div className="content">
+                  <Home/>
+                  <Link to="/events">Events</Link>
+                </div>
               </div>
             )}/>
             <Route path="/events" component={Events}/>
-          </div>
         </div>
       </Router>
     );
