@@ -13,12 +13,20 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(25, 25, 25, .70);
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7) 80%);
 }
 
 .header .container {
   padding: 9rem 2rem 3rem;
   position: relative;
+  display: table;
+  width: 100%;
+}
+
+.header-content,
+.back-link {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .header > *,
@@ -29,9 +37,9 @@
 
 .header .back-link {
   color: #ec9b33;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 2rem;
+  font-size: 2rem;
+  /* position: absolute; */
+  /* top: 2rem; */
 }
 
 .header .logo-text {
@@ -54,10 +62,14 @@
 @media screen and (min-width: 84rem) {
   .header .container {
     padding-left: 0;
-    padding-top: 16rem;
+    padding-top: 20rem;
   }
 
   .header .subtext {
     font-size: 1.5rem;
+  }
+  
+  .header:before {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7) 90%);
   }
 }

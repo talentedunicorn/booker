@@ -9,12 +9,14 @@ export default (props) =>
       { props.backTo && 
         <Link to={props.backTo} className="back-link"><BackIcon/></Link>
       }
-      { !props.path && 
-        <h1 className="logo-text">{ props.title }</h1>
-      }
-      { props.path && 
-        <Link to="/" className="logo-text">{ props.title }</Link>
-      }
-      <h2 className="subtext">{ props.subtitle }</h2>
+      <div className="header-content">
+        { !props.path && 
+          <h1 className="logo-text">{ props.title }</h1>
+        }
+        { props.path && 
+          <Link to="/" className="logo-text">{ props.title }</Link>
+        }
+        <h2 className="subtext">{ props.subtitle }</h2>
+      </div>
     </div>
   </div>
