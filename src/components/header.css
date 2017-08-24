@@ -13,7 +13,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .7) 80%);
+  background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, 1) 80%);
 }
 
 .header .container {
@@ -38,8 +38,6 @@
 .header .back-link {
   color: #ec9b33;
   font-size: 2rem;
-  /* position: absolute; */
-  /* top: 2rem; */
 }
 
 .header .logo-text {
