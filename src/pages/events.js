@@ -4,7 +4,7 @@ import bg from '../images/kligraphy.jpg';
 
 export default () => 
   <div className="event">
-    <Header title="kligraphy" subtitle="Watercolor Floral & Brush Calligraphy Workshop" bg={bg}/>
+    <Header title="kligraphy" subtitle="Watercolor Floral & Brush Calligraphy Workshop" backTo="/" bg={bg}/>
     <div className="content floatWrapper">
       <div className="half">
         <h2 className="title">05 September 2017, 3PM - 7PM MYT</h2>

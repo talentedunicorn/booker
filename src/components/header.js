@@ -6,11 +6,11 @@ import './header.css';
 export default (props) => 
   <div className="header" style={{ backgroundImage:`url(${props.bg})` }}>
     <div className="container">
+      { props.backTo && 
+        <Link to={props.backTo} className="back-link"><BackIcon/></Link>
+      }
       { !props.path && 
-        <div>
-          <Link to="/" className="back-link"><BackIcon/></Link>
-          <h1 className="logo-text">{ props.title }</h1>
-        </div>
+        <h1 className="logo-text">{ props.title }</h1>
       }
       { props.path && 
         <Link to="/" className="logo-text">{ props.title }</Link>

@@ -1,5 +1,4 @@
 .App {
-  background: #e5e6f4;
   overflow: auto;
 }
 
@@ -63,10 +62,6 @@
 }
 
 @media screen and (min-width: 60em) {
-  .content {
-    margin-bottom: 6rem;
-  }
-
   .full,
   .half {
     float: left;
