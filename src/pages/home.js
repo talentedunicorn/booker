@@ -15,5 +15,7 @@ export default () =>
     <div className="half">
       <h2 className="title">For event booking</h2>
     </div>
-    <Link to="/events">Events</Link>
+    <div className="half">
+      <Link to="/events">Events</Link>
+    </div>
   </div>

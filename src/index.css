@@ -7,3 +7,11 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+p {
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 1rem;
+}
