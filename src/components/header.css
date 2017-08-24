@@ -1,10 +1,30 @@
 .header {
-  background-color: #222;
   color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.header:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(25, 25, 25, .70);
 }
 
 .header .container {
-  padding: 12rem 2rem 3rem;
+  padding: 9rem 2rem 3rem;
+  position: relative;
+}
+
+.header > *,
+.header + * {
+  z-index: 2;
+  position: relative;
 }
 
 .header .logo-text {
@@ -27,6 +47,7 @@
 @media screen and (min-width: 84rem) {
   .header .container {
     padding-left: 0;
+    padding-top: 16rem;
   }
 
   .header .subtext {

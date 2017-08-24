@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './header.css';
 
 export default (props) => 
-  <div className="header">
+  <div className="header" style={{ backgroundImage:`url(${props.bg})` }}>
     <div className="container">
       { !props.path && 
         <h1 className="logo-text">{ props.title }</h1>

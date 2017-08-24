@@ -1,9 +1,11 @@
 import React from 'react';
 import Header from '../components/header';
+import bg from '../images/kligraphy.jpg';
+import { Link } from 'react-router-dom';
 
 export default () => 
   <div className="event">
-    <Header title="kligraphy" subtitle="Watercolor Floral & Brush Calligraphy Workshop"/>
+    <Header title="kligraphy" subtitle="Watercolor Floral & Brush Calligraphy Workshop" bg={bg}/>
     <div className="content floatWrapper">
       <div className="half">
         <h2 className="title">05 September 2017, 3PM - 7PM MYT</h2>
@@ -24,6 +26,7 @@ export default () =>
 
       <div className="full">
         <h3 className="title">Book now</h3>
+        <Link to="/">Back</Link>
       </div>
     </div>
   </div>
