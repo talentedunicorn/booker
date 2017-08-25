@@ -6,13 +6,19 @@ export default class Form extends React.Component {
     super(props)
     this.state = {
       price: 230,
-      total: 230,
+      seats: 1,
+      total: 0,
       totalSeats: 10,
-      remaining: 10,
-      seats: 0
+      remaining: 0
     }
 
     this.updateSeats = this.updateSeats.bind(this)
+  }
+
+  componentWillMount() {
+    console.log('Loaded form')
+    this.setState({total: this.state.price * this.state.seats})
+    this.setState({remaining: this.state.totalSeats - this.state.seats})
   }
 
   updateSeats(e) {
