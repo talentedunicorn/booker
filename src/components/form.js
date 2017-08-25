@@ -6,7 +6,7 @@ export default () =>
     <label>
       Book
       &nbsp;
-      <input type="number" min="1"/>
+      <input type="number" min="1" required/>
       &nbsp;
       seat(s) for RM230
     </label>

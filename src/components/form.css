@@ -1,6 +1,8 @@
 .form {
   text-align: center;
   padding: 3rem 1rem;
+  background: #ec9b33;
+  margin: 2rem -2rem;
 }
 
 .form label,
@@ -12,7 +14,6 @@
 
 .form label {
   line-height: 2;
-  color: #a4a4a4;
 }
 
 .form input[type=number] {
@@ -21,26 +22,32 @@
   font-weight: bold;
   text-align: center;
   border: none;
-  border-bottom: 3px solid #ec9b33;
+  border-bottom: 3px solid #070000;
   outline: none;
+  background: #ffffff;
 }
 
 .form .form-submit {
-  display: inline-block;
   vertical-align: middle;
   margin: 1rem 1rem 0; 
 }
 
 .form-submit small {
   display: block;
-  color: #a4a4a4;
+  color: #fff;
   margin-top: .5rem;
 }
 
 .form button[type=submit] {
   padding: .5rem 1rem;
-  background: #ec9b33;
+  background: #070000;
   border: none;
   color: #fff;
   outline: none;
+}
+
+@media screen and (min-width: 60rem) {
+  .form .form-submit {
+    display: inline-block;
+  }
 }

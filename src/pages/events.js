@@ -44,10 +44,6 @@ export default () =>
         </div>
       </div>
 
-      <div className="floatWrapper">
-        <div className="full">
-          <Form/>
-        </div>
-      </div>
+      <Form/>
     </div>
   </div>
