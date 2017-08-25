@@ -24,9 +24,11 @@ export default class Form extends React.Component {
   updateSeats(e) {
     let selected = e.target.value
     let { price, totalSeats } = this.state
-    this.setState({seats: selected})
-    this.setState({total: price * selected})
-    this.setState({remaining: totalSeats - selected })
+    if (totalSeats >= selected) {
+      this.setState({seats: selected})
+      this.setState({total: price * selected})
+      this.setState({remaining: totalSeats - selected })
+    }
   }
 
   render() {
