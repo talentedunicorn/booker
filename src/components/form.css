@@ -39,7 +39,7 @@
 }
 
 .form button[type=submit] {
-  padding: .5rem 1rem;
+  padding: 1rem 2rem;
   background: #070000;
   border: none;
   color: #fff;
@@ -49,5 +49,9 @@
 @media screen and (min-width: 60rem) {
   .form .form-submit {
     display: inline-block;
+  }
+
+  .form button[type=submit] {
+    padding: .5rem 1rem;
   }
 }
