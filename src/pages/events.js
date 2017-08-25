@@ -22,10 +22,8 @@ export default () =>
         </div>
         <div className="half">
           <h2 className="title">Getting there</h2>
-          <p>
-            <strong>Table & Apron</strong>
-            <address>23, Jalan SS 20/11, Damansara Kim<br/> 47400 Petaling Jaya, Selangor, Malaysia</address>
-          </p>
+          <strong>Table & Apron</strong>
+          <address>23, Jalan SS 20/11, Damansara Kim<br/> 47400 Petaling Jaya, Selangor, Malaysia</address>
           <div style={{
             position: "relative",
             paddingBottom: "50%",
