@@ -1,0 +1,46 @@
+.form {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.form label,
+.form button[type=submit] {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form label {
+  line-height: 2;
+  color: #a4a4a4;
+}
+
+.form input[type=number] {
+  max-width: 3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid #ec9b33;
+  outline: none;
+}
+
+.form .form-submit {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1rem 1rem 0; 
+}
+
+.form-submit small {
+  display: block;
+  color: #a4a4a4;
+  margin-top: .5rem;
+}
+
+.form button[type=submit] {
+  padding: .5rem 1rem;
+  background: #ec9b33;
+  border: none;
+  color: #fff;
+  outline: none;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
+import Form from '../components/form';
 import bg from '../images/kligraphy.jpg';
 
 export default () => 
@@ -47,7 +48,7 @@ export default () =>
 
       <div className="floatWrapper">
         <div className="full">
-          <h3 className="title">Book now</h3>
+          <Form/>
         </div>
       </div>
     </div>
