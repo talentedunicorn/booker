@@ -1,8 +1,16 @@
+.form-soldout,
 .form {
   text-align: center;
   padding: 3rem 1rem;
   background: #ec9b33;
   margin: 2rem -2rem;
+}
+
+.form-soldout {
+  background: #070000;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .form label,

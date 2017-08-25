@@ -33,20 +33,28 @@ export default class Form extends React.Component {
     let { total, totalSeats, remaining, seats } = this.state
 
     return (
-      <form className="form">
-        <label>
-          Book
-          &nbsp;
-          <input type="number" min="1" max={ totalSeats } value={ seats } onChange={ this.updateSeats } required/>
-          &nbsp;
-          seat(s) for RM{ total }
-        </label>
+      <div>
+        { totalSeats > 0 ? (
+          <form className="form">
+            <label>
+              Book
+              &nbsp;
+              <input type="number" min="1" max={ totalSeats } value={ seats } onChange={ this.updateSeats } required/>
+              &nbsp;
+              seat(s) for RM{ total }
+            </label>
 
-        <div className="form-submit">
-          <button type="submit">Book now</button>
-          <small>{ remaining } seats remaining</small>
-        </div>
-      </form>
+            <div className="form-submit">
+              <button type="submit">Book now</button>
+              <small>{ remaining } seats remaining</small>
+            </div>
+          </form>
+        ):(
+          <div>
+            <h3 className="form-soldout">Sorry, this event is sold out</h3>
+          </div>
+        )}
+      </div>
     )
   }
 }
