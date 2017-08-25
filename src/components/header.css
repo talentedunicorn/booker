@@ -38,6 +38,9 @@
 .header .back-link {
   color: #ec9b33;
   font-size: 2rem;
+  padding-right: 1rem;
+  width: 1px;
+  white-space: nowrap;
 }
 
 .header .logo-text {
