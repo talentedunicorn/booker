@@ -3,3 +3,8 @@ With booker you can:
 * Create events
 * Share your event with the world
 * Get email notification for bookings
+
+
+## Running
+- Install `yarn`
+- Run development `yarn start`
