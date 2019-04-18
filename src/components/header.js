@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BackIcon from 'react-icons/lib/md/arrow-back';
 import './header.css';
 
 export default (props) => 
   <div className="header" style={{ backgroundImage:`url(${props.bg})` }}>
     <div className="container">
       { props.backTo && 
-        <Link to={props.backTo} className="back-link"><BackIcon/></Link>
+        <Link to={props.backTo} className="back-link">Back</Link>
       }
       <div className="header-content">
         { !props.path && 

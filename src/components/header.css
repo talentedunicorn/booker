@@ -36,11 +36,8 @@
 }
 
 .header .back-link {
-  color: #ec9b33;
-  font-size: 2rem;
-  padding-right: 1rem;
-  width: 1px;
-  white-space: nowrap;
+  background: var(--brand-color);
+  mask: var(--icon-back) no-repeat center center/contain;
 }
 
 .header .logo-text {
